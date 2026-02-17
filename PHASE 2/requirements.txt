@@ -1,0 +1,7 @@
+onnxruntime
+torch
+torchvision
+scikit-learn
+matplotlib
+seaborn
+numpy
