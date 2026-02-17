@@ -1,0 +1,23 @@
+PHASE 2 PREDICTION RESULTS
+========================================
+
+Accuracy  : 0.3926
+Precision : 0.4548 (weighted)
+Recall    : 0.3926 (weighted)
+Model Size: 8.50 MB
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      bridge       0.33      0.06      0.11        32
+       clean       0.17      0.30      0.22        33
+       crack       0.79      0.48      0.60        31
+        open       0.57      0.13      0.22        30
+       other       0.57      0.49      0.53       110
+    particle       0.33      0.60      0.43        30
+     scratch       0.26      0.47      0.33        30
+         via       0.33      0.37      0.35        30
+
+    accuracy                           0.39       326
+   macro avg       0.42      0.36      0.35       326
+weighted avg       0.45      0.39      0.39       326

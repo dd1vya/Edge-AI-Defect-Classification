@@ -1,0 +1,72 @@
+============================================================
+  PHASE 2 - HACKATHON TEST DATASET PREDICTION
+============================================================
+Run started at : 2026-02-17 12:47:25
+Model path     : /kaggle/input/models/dd1vya/edge-defect/onnx/edge-ai-defect/1/edge_defect_model.onnx
+Dataset path   : /kaggle/input/datasets/dd1vya/dataset/phase2dataset/test
+Image size     : 224x224
+
+Test folders discovered : ['CMP', 'LER', 'bridge', 'clean', 'crack', 'open', 'other', 'particle', 'via']
+Total test images       : 326
+
+Class mapping (test folder -> training class):
+  CMP        -> scratch (organizer confirmed)
+  LER        -> other (hackathon rule: unmatched -> other)
+  bridge     -> bridge
+  clean      -> clean
+  crack      -> crack
+  open       -> open
+  other      -> other
+  particle   -> particle
+  via        -> via
+
+Loading ONNX model...
+Model loaded successfully.
+Model size : 8.50 MB
+Input name : input
+
+Running inference...
+Inference completed!
+Total inference time : 7.4340 seconds
+Avg time per image   : 22.80 ms
+
+Prediction distribution:
+  bridge    :   6 predictions
+  clean     :  58 predictions
+  crack     :  19 predictions
+  open      :   7 predictions
+  other     :  95 predictions
+  particle  :  54 predictions
+  scratch   :  54 predictions
+  via       :  33 predictions
+
+============================================================
+  RESULTS SUMMARY
+============================================================
+Accuracy  : 0.3926  (39.26%)
+Precision : 0.4548 (45.48%) [weighted]
+Recall    : 0.3926  (39.26%) [weighted]
+Model Size: 8.50 MB
+
+Per-Class Classification Report:
+              precision    recall  f1-score   support
+
+      bridge       0.33      0.06      0.11        32
+       clean       0.17      0.30      0.22        33
+       crack       0.79      0.48      0.60        31
+        open       0.57      0.13      0.22        30
+       other       0.57      0.49      0.53       110
+    particle       0.33      0.60      0.43        30
+     scratch       0.26      0.47      0.33        30
+         via       0.33      0.37      0.35        30
+
+    accuracy                           0.39       326
+   macro avg       0.42      0.36      0.35       326
+weighted avg       0.45      0.39      0.39       326
+
+Results saved to results.txt
+Confusion matrix saved to confusion_matrix.png
+Per-class accuracy chart saved to per_class_accuracy.png
+Normalized confusion matrix saved to confusion_matrix_normalized.png
+
+Run ended at: 2026-02-17 12:47:35
